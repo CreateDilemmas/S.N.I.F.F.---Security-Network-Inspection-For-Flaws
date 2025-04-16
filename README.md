@@ -15,9 +15,13 @@ Check output\errors.log if any “WARNING” messages pop up.
 .bat
 Prep: Save as sniff.bat
 Run: Drop your capture.pcap in the same folder and click, or drag your pcap it into the batch.
+Ensure TShark is installed and accessible.
 Path Fix: If tshark’s elsewhere (normally C:\Wireshark\tshark.exe), update the TSHARK path.
 
 .sh
 Prep: Save as sniff.sh, make executable with chmod +x sniff.sh.
-Run: ./sniff.sh (with capture.pcap in the same dir).
-Path Fix: If tshark’s not in PATH, update TSHARK="/path/to/tshark".
+Run: ./sniff.sh (with capture.pcap in the same dir) or ./sniff.sh path/to/your_file.pcap.
+Ensure TShark is installed and accessible:
+  sudo apt-get install tshark (Debian/Ubuntu)
+  sudo yum install wireshark (CentOS/RHEL)
+Path Fix: If tshark’s not in PATH, update the TSHARK variable to its full path (e.g., /usr/bin/tshark).
