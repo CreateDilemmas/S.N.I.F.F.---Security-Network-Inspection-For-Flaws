@@ -9,7 +9,7 @@ Simple: Outputs are raw packet summaries which are enough to spot issues, then j
 
 Creates an output folder with a .txt file for each filter’s hits.
 You should get all output files (like http_methods.txt, etc).
-Empty files should flip to -empty suffixes (tells you at a glance which filters came up dry).
+Empty files should flip to _empty prefixes (tells you at a glance which filters came up dry).
 Check output\errors.log if any “WARNING” messages pop up.
 
 .bat
